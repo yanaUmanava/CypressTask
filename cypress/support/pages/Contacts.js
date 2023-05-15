@@ -6,6 +6,10 @@ export class ContactsList {
     
     deletedRowId = '';
 
+    checkIfTableLoaded() {
+        cy.get('#myTable').should('be.visible');
+    }
+
     defineRowId(rowNumber) {
         cy.get('#myTable')
             .find('tr')

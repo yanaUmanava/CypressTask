@@ -14,22 +14,22 @@ describe('Delete contact', () => {
   })
 
   it('delete 1th contact', () => {
-    cy.get('#myTable').should('be.visible');
+    contactsList.checkIfTableLoaded();
     contactsList.defineRowId(1);
     contactsList.openContact(1);
     contactPage.triggerContactDeletion();
     contactPage.confirmContactDeletion();
-    cy.get('#myTable').should('be.visible');
+    contactsList.checkIfTableLoaded();
     contactsList.checkIfRowDeleted();
   });
 
   it('delete 6th contact', () => {
-    cy.get('#myTable').should('be.visible');
+    contactsList.checkIfTableLoaded();
     contactsList.defineRowId(6);
     contactsList.openContact(6);
     contactPage.triggerContactDeletion();
     contactPage.confirmContactDeletion();
-    cy.get('#myTable').should('be.visible');
+    contactsList.checkIfTableLoaded();
     contactsList.checkIfRowDeleted();
   });
 });
