@@ -1,0 +1,14 @@
+{
+  "name": "yana_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yana",
+  "license": "ISC",
+  "devDependencies": {
+    "faker": "^6.6.6"
+  }
+}
